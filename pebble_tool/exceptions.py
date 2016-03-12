@@ -34,3 +34,9 @@ class OutdatedProjectException(PebbleProjectException):
 
 class SDKInstallError(ToolError):
     pass
+
+class ReleaseError(Exception):
+    pass
+
+class ValidationError(ReleaseError):
+    pass

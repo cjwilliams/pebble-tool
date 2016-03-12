@@ -11,12 +11,12 @@ import requests.packages.urllib3 as urllib3
 # Violating PEP8 for custom command ordering for `pebble -h`
 from .commands.sdk import manage
 from .commands.sdk.project import build
-
 from .commands.base import register_children
 from .commands import (install, logs, screenshot, timeline, emucontrol, ping, account, repl,
                        transcription_server, data_logging)
 from .commands.sdk import create, emulator
 from .commands.sdk.project import analyse_size, convert, debug
+from .commands.sdk import release
 from .exceptions import ToolError
 from .sdk import sdk_version
 from .util.analytics import wait_for_analytics, analytics_prompt
