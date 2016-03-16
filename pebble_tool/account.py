@@ -24,7 +24,7 @@ SDK_CLIENT_SECRET = os.getenv("PEBBLE_OAUTH_APP_SECRET", "8fdcbceafcbca6f9fdb643
 flow = OAuth2WebServerFlow(
     client_id=SDK_CLIENT_ID,
     client_secret=SDK_CLIENT_SECRET,
-    scope="public",
+    scope=["public", "dev_portal_apps_api"],
     auth_uri=AUTHORIZE_URI,
     token_uri=TOKEN_URI
 )
